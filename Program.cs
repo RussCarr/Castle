@@ -8,30 +8,37 @@ namespace CastleGrimtol
   {
     public static void Main(string[] args)
     {
+       Start:
       Console.Clear();
-      System.Console.WriteLine("Brave Young Warrior our forces are failing and the enemy grows stronger");
-      System.Console.WriteLine("everyday. I fear if we don't act now our people will be driven from their");
-      System.Console.WriteLine("homes. These dark times have left us with one final course of action. We");
-      System.Console.WriteLine("must cut the head off of the snake by assasinating the Dark Lord of Grimtol...");
-      System.Console.WriteLine("Our sources have identified a small tunnel that leads into the rear of the");
-      System.Console.WriteLine("castle.");
-      System.Console.WriteLine();
-      System.Console.WriteLine();
-      System.Console.WriteLine("Do you want to play a game");
-      string choise = System.Console.ReadLine().ToLower();
-
-      switch (choise)
       {
-      case "y":
-        System.Console.WriteLine("What is your name?");
-      string playerName = System.Console.ReadLine().ToLower();
-        setup(playerName)
-        break;
-      case "n":
-        break;
-        default:
-        break;
+        System.Console.WriteLine("Brave Young Warrior our forces are failing and the enemy grows stronger");
+        System.Console.WriteLine("everyday. I fear if we don't act now our people will be driven from their");
+        System.Console.WriteLine("homes. These dark times have left us with one final course of action. We");
+        System.Console.WriteLine("must cut the head off of the snake by assasinating the Dark Lord of Grimtol...");
+        System.Console.WriteLine("Our sources have identified a small tunnel that leads into the lobby of the");
+        System.Console.WriteLine("castle.");
+        System.Console.WriteLine();
+        System.Console.WriteLine();
+        System.Console.WriteLine("Do you want to help save us?");
+        string choise = System.Console.ReadLine().ToLower();
 
+        switch (choise)
+        {
+          case "y":
+            System.Console.WriteLine("What is your name?");
+            string playerName = System.Console.ReadLine().ToLower();
+            Player player = new Player(playerName);
+
+            List<Item> Inventory = new List<Item>();
+            // Item item = new Item();
+            // Game. setup(playerName)
+            break;
+          case "n":
+            break;
+          default:
+          goto Start;
+            break;
+        }
       }
 
       // Game app = new Game();
@@ -59,4 +66,6 @@ namespace CastleGrimtol
       //     System.Console.ReadLine();
     }
   }
+
+
 }

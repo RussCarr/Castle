@@ -1,12 +1,30 @@
-// using System.Collections.Generic;
+using System.Collections.Generic;
 
-// namespace CastleGrimtol.Project
-// {
-//     public class Room : IRoom
-//     {
+namespace CastleGrimtol.Project.Rooms
+{
+  public class Room : IRoom
+  {
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public List<IItem> Items { get; set; }
 
-//     }
-// }
+    public Room(string name)
+    {
+      Name = name;
+    }
+
+
+    public void look()
+    {
+      System.Console.WriteLine("You have found your way into the castle through a secret tunnel but you can't turn back. The tunnel collapsed and now you will need to find a way to disguise yourself and kill the Dark Lord. We don't know exactly how so you'll need to use your wit and cunning to think of something.");
+    }
+
+    public void UseItem(IItem item)
+    {
+      item = item;
+    }
+  }
+}
 
 
 // take <item> "will pick up and put into inventory"

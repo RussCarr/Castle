@@ -1,11 +1,13 @@
-// using System.Collections.Generic;
+using System.Collections.Generic;
 
-// namespace CastleGrimtol.Project
-// {
-//     public interface IPlayer
-//     {
-//         int Score { get; set; }
-//         List<Item> Inventory { get; set; }
-
-//     }
-// }
+namespace CastleGrimtol.Project
+{
+  public interface IPlayer
+  {
+    // int Score { get; set; }
+    // List<Item> Inventory { get; set; }
+    
+  //   void score();
+  //   void inventory();
+  }
+}
