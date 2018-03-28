@@ -1,19 +1,20 @@
 using System.Collections.Generic;
 
-namespace CastleGrimtol.Project
+namespace CastleGrimtol.Project.Items
 {
 
-  class items : IItem
+  class MessengerOvercoat : IItem
   {
 
     public string Name { get; set; }
     public string Description { get; set; }
-    public items(string _name)
+    
+     public MessengerOvercoat(string name)
    {
-       Name = _name;
+       Name = name;
 
    }
-   
+    
     public void use()
     {
       System.Console.WriteLine("You used the " + Name + "!");
@@ -22,9 +23,7 @@ namespace CastleGrimtol.Project
     {
       System.Console.WriteLine("You grabbed the " + Name + "!");
     }
-
   }
-
 
 }
 

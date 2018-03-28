@@ -1,9 +1,9 @@
-using System.Collections.Generic;
+// using System.Collections.Generic;
 
-namespace CastleGrimtol.Project
-{
-    public class Player : IPlayer
-    {
+// namespace CastleGrimtol.Project
+// {
+//     public class Player : IPlayer
+//     {
 
-    }
-}
+//     }
+// }

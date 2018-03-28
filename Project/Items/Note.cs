@@ -1,16 +1,17 @@
 using System.Collections.Generic;
 
-namespace CastleGrimtol.Project
+namespace CastleGrimtol.Project.Items
 {
 
-  class items : IItem
+  class Note : IItem
   {
 
     public string Name { get; set; }
     public string Description { get; set; }
-    public items(string _name)
+   
+    public Note(string name)
    {
-       Name = _name;
+       Name = name;
 
    }
    
@@ -24,7 +25,7 @@ namespace CastleGrimtol.Project
     }
 
   }
-
+ 
 
 }
 

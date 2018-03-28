@@ -15,34 +15,53 @@ namespace CastleGrimtol.Project
 
     }
 
-help()
+  public class Room
+  {
+  
+  }
 
-quit()
-
-switch (choise)
-{
-    case: n || north
-    break;
-    case: e || east
-    break;
-    case: s || south
-    break;
-    case: w || west
-    break;
-    case: q || quit
-    break;
-    case: h || help
-    break;
-    case: i || inventory
-    break;
-    case: u || use
-    break;
-    case: t || take
-    
-    
-    default:
-    break;
+  public class Player
+  {
+  }
 }
 
+// Lobby
+    // directions =  [n, e, s, w]
+    //   n = Barracks
+    //   e = CastleCourtyard
+    //   s = CaptainsQuarters
+    //   w = Exit
 
-}
+
+
+// help()
+
+// quit()
+
+// switch (choise)
+// {
+//     case: n || north
+//     break;
+//     case: e || east
+//     break;
+//     case: s || south
+//     break;
+//     case: w || west
+//     break;
+//     case: q || quit
+//     break;
+//     case: h || help
+//     break;
+//     case: i || inventory
+//     break;
+//     case: u || use
+//     break;
+//     case: t || take
+    
+    
+//     default:
+//     break;
+// }
+
+
+// }
