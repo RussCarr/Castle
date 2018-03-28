@@ -17,7 +17,11 @@ namespace CastleGrimtol.Project
 
   public class Room
   {
-  public string roomName {get; set;} = "Lobby";
+    public Room()
+    {
+    }
+
+    public string roomName {get; set;} = "Lobby";
   public string roomDescription {get; set;}
 
   }
