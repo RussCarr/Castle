@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+
+using System;
 
 namespace CastleGrimtol.Project
 {
@@ -6,13 +7,11 @@ namespace CastleGrimtol.Project
   {
     string Name { get; set; }
     string Description { get; set; }
-    List<IItem> Items { get; set; }
+    // List<Item> Items { get; set; }
 
-    void UseItem(IItem item);
-    void look();
-
-
-
+    void useItem();
+   void look();
+ 
   }
 
 }

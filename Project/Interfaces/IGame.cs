@@ -2,39 +2,35 @@ using System.Collections.Generic;
 
 namespace CastleGrimtol.Project
 {
-    public interface IGame
-    {
-        Room CurrentRoom { get; set; }
-        Player CurrentPlayer { get; set; }
-
-        void Setup();
-        void Reset();
-
-        //No need to Pass a room since Items can only be used in the CurrentRoom
-        void UseItem(string itemName);
-
-    }
-
-  public class Room
+  public interface IGame
   {
-    public Room()
-    {
-    }
+    Room CurrentRoom { get; set; }
+    Player CurrentPlayer { get; set; }
 
-    public string roomName {get; set;} = "Lobby";
-  public string roomDescription {get; set;}
+    void Setup();
+    void Reset();
+
+    //No need to Pass a room since Items can only be used in the CurrentRoom
+    void UseItem(string itemName);
 
   }
 
-  
+  public class Room
+  {
+    public string roomName { get; set; } = "Lobby";
+    public string roomDescription { get; set; }
+
+  }
+
+
 }
 
 // Lobby
-    // directions =  [n, e, s, w]
-    //   n = Barracks
-    //   e = CastleCourtyard
-    //   s = CaptainsQuarters
-    //   w = Exit
+// directions =  [n, e, s, w]
+//   n = Barracks
+//   e = CastleCourtyard
+//   s = CaptainsQuarters
+//   w = Exit
 
 
 
@@ -61,8 +57,8 @@ namespace CastleGrimtol.Project
 //     case: u || use
 //     break;
 //     case: t || take
-    
-    
+
+
 //     default:
 //     break;
 // }

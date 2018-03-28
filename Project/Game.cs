@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using CastleGrimtol.Project.Rooms;
 
 namespace CastleGrimtol.Project
 {
@@ -32,9 +33,10 @@ namespace CastleGrimtol.Project
           case "y":
             System.Console.WriteLine("What is your name?");
             string playerName = System.Console.ReadLine().ToLower();
-            Player player = new Player(playerName);
+            Player CurrentPlayer = new Player(playerName);
+            Lobby CurrentRoom = new Lobby();
             List<Item> Inventory = new List<Item>();
-            // Item item = new Item();
+            Inventory.Add();
             break;
           case "n":
             break;
@@ -44,6 +46,11 @@ namespace CastleGrimtol.Project
         }
 
       }
+    }
+    void Build Items ()
+    {
+       Items.Key silverKey = new Items.Key("Silver Key")
+            
     }
     public void UseItem(string itemName)
     {
