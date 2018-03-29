@@ -33,12 +33,7 @@ namespace CastleGrimtol.Project.Rooms
     {
       Items = item;
     }
-
-    public void useItem()
-    {
-      throw new System.NotImplementedException();
-    }
-  }
+     }
 }
 
 

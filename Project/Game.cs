@@ -34,43 +34,13 @@ namespace CastleGrimtol.Project
             System.Console.WriteLine("What is your name?");
             string playerName = System.Console.ReadLine().ToLower();
             Player CurrentPlayer = new Player(playerName, 0, "Currently Nothing");
-            List<Item> Inventory = new List<Item>();
-            Lobby CurrentRoom = new Lobby();
-            
-            Item key = new Item("key", "a silver key");
-            Item brokenlock = new Item("broken lock", "a broken lock");
-            Item uniform = new Item("uniform", "a guards uniform");
-            Item hammer = new Item("hammer", "a hammer");
-            Item overcoat = new Item("overcoat", "a messenger overcoat");
-            Item note = new Item("note", "a note");
-            Item vial = new Item("vial", "a vial of poison");
-            
-            CurrentRoom.story();
-            // System.Console.WriteLine("[(n)orth,(s)outh,(e)ast]");
-            // string playerChoise = System.Console.ReadLine().ToLower();
-            // switch (playerChoise)
-            // {
-            //   case "n":
-            //     System.Console.WriteLine("north");
-            //     if (CurrentRoom.DirectionN = true) 
-            //     {
-            //       Barracks newRoom = new Barracks();
-            //     }
-            //     break;
-            //   case "s":
-            //     System.Console.WriteLine("south");
-            //     break;
-            //   case "e":
-            //     System.Console.WriteLine("east");
-            //     break;
-            //   default:
-            //     directions();
-            //     break;
-            // }
-            // Project.Rooms.Lobby ();
-            // IList<Student> studentList = new List<Student>();
-            
-
+            createItems();
+            createRooms();
+            // List<Item> Inventory = new List<Item>();
+            // Lobby CurrentRoom = new Lobby();
+            // Inventory.Add(Items.Key)
+            // CurrentRoom.story();
+            // CurrentPlayer.inventory();
             break;
           case "n":
             break;
@@ -78,10 +48,34 @@ namespace CastleGrimtol.Project
             Setup();
             break;
         }
-
       }
     }
+    public void createItems()
+    {
 
+      Item key = new Item("key", "a silver key");
+      Item brokenlock = new Item("broken lock", "a broken lock");
+      Item uniform = new Item("uniform", "a guards uniform");
+      Item hammer = new Item("hammer", "a hammer");
+      Item overcoat = new Item("overcoat", "a messenger overcoat");
+      Item note = new Item("note", "a note");
+      Item vial = new Item("vial", "a vial of poison");
+    }
+    public void createRooms()
+    {
+      Room Barracks = new Room();
+      Room CaptainsQuarters = new Room();
+      Room CastleCourtyards = new Room();
+      Room CouncilRoom = new Room();
+      Room Dungenon = new Room();
+      Room GuardRoom = new Room();
+      Room Lobby = new Room();
+      Room NorthHallway = new Room();
+      Room SouthHallway = new Room();
+      Room Squiretower = new Room();
+      Room ThroneRoom = new Room();
+
+    }
 
 
 

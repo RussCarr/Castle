@@ -1,9 +1,7 @@
-using System;
-using System.Collections.Generic;
-
 namespace CastleGrimtol.Project.Rooms
+
 {
-  public class Lobby : IRoom
+  public class Lobby : IRoom 
   {
     public string Name { get; set; }
     public string Description { get; set; }
@@ -23,7 +21,7 @@ namespace CastleGrimtol.Project.Rooms
       // DirectionS = true;
       // DirectionW = false;
     }
-    public void story()
+    public void story(Game game)
     {
       System.Console.WriteLine("You have found your way into the castle through a secret tunnel but you can't turn back. The tunnel collapsed and now you will need to find a way to disguise yourself and kill the Dark Lord. We don't know exactly how so you'll need to use your wit and cunning to think of something.");
       System.Console.WriteLine("[(n)orth,(s)outh,(e)ast]");
@@ -54,7 +52,7 @@ namespace CastleGrimtol.Project.Rooms
         case "quit":
           break;
         case "inventory":
-          inventory();
+         Game. CurrentPlayer.inventory();
           break;
         default:
           directions();
