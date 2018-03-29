@@ -7,7 +7,7 @@ namespace CastleGrimtol.Project
     string Name { get; set; }
     string Description { get; set; }
   
-  void use();
+  // void useItem();
   void take();
   
   }

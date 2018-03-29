@@ -14,7 +14,7 @@ namespace CastleGrimtol.Project
     }
     public void Setup()
     {
-    
+
       System.Console.Clear();
       {
         System.Console.WriteLine("Brave Young Warrior our forces are failing and the enemy grows stronger");
@@ -33,10 +33,44 @@ namespace CastleGrimtol.Project
           case "y":
             System.Console.WriteLine("What is your name?");
             string playerName = System.Console.ReadLine().ToLower();
-            Player CurrentPlayer = new Player(playerName);
-            Lobby CurrentRoom = new Lobby();
+            Player CurrentPlayer = new Player(playerName, 0, "Currently Nothing");
             List<Item> Inventory = new List<Item>();
-            Inventory.Add();
+            Lobby CurrentRoom = new Lobby();
+            
+            Item key = new Item("key", "a silver key");
+            Item brokenlock = new Item("broken lock", "a broken lock");
+            Item uniform = new Item("uniform", "a guards uniform");
+            Item hammer = new Item("hammer", "a hammer");
+            Item overcoat = new Item("overcoat", "a messenger overcoat");
+            Item note = new Item("note", "a note");
+            Item vial = new Item("vial", "a vial of poison");
+            
+            CurrentRoom.story();
+            // System.Console.WriteLine("[(n)orth,(s)outh,(e)ast]");
+            // string playerChoise = System.Console.ReadLine().ToLower();
+            // switch (playerChoise)
+            // {
+            //   case "n":
+            //     System.Console.WriteLine("north");
+            //     if (CurrentRoom.DirectionN = true) 
+            //     {
+            //       Barracks newRoom = new Barracks();
+            //     }
+            //     break;
+            //   case "s":
+            //     System.Console.WriteLine("south");
+            //     break;
+            //   case "e":
+            //     System.Console.WriteLine("east");
+            //     break;
+            //   default:
+            //     directions();
+            //     break;
+            // }
+            // Project.Rooms.Lobby ();
+            // IList<Student> studentList = new List<Student>();
+            
+
             break;
           case "n":
             break;
@@ -47,15 +81,9 @@ namespace CastleGrimtol.Project
 
       }
     }
-    void Build Items ()
-    {
-       Items.Key silverKey = new Items.Key("Silver Key")
-            
-    }
-    public void UseItem(string itemName)
-    {
-      throw new System.NotImplementedException();
-    }
+
+
+
 
     //   var items = new List<Project.IItem>();
 

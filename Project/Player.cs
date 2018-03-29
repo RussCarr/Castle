@@ -6,20 +6,25 @@ namespace CastleGrimtol.Project
   public class Player : IPlayer
   {
     public string PlayerName { get; set; }
-   
-    public Player (string playerName)
+    public int Pscore { get; set; }
+    public string Pinventory { get; set; }
+    public List<Item> Inventory { get; set; }
+
+    public Player(string playerName, int playerScore, string playerInv)
     {
       PlayerName = playerName;
+      Pscore = playerScore;
+      Pinventory = playerInv;
     }
-       public void Score (int Score)
+    public void score()
     {
-      Console.WriteLine("Your current Score is " + Score);
+      Console.WriteLine("Your current Score is " + this.Pscore);
     }
-    // public void Inventory (string inventory)
-    // {
-    //   inventory = null;
+    public void inventory()
+    {
 
-    // }
+      Console.WriteLine("Your current stuff in your bag is " + this.Pinventory);
+    }
 
   }
 }

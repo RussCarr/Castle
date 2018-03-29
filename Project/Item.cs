@@ -3,7 +3,7 @@ using System;
 namespace CastleGrimtol.Project
 {
 
-  class Item 
+  public class Item 
   {
 
     public string Name { get; set; }
@@ -15,9 +15,15 @@ namespace CastleGrimtol.Project
       Description = description;
     }
 
-       public void useItem()
+    public Item(string v)
     {
-      System.Console.WriteLine("You used the " + Name + "!");
+      v = Name;
+      Description = "something";
+    }
+
+    public void useItem()
+    {
+      System.Console.WriteLine("You used the " + this.Name + "!");
     }
     public void takeItem()
     {
